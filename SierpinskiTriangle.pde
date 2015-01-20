@@ -7,16 +7,21 @@ public void setup()
 public void draw()
 {
 	background(0,0,0);
-	fill(255, 255, 255);
+	fill(134,238,56);
+  	text("press r to restart",500, 400);
+  	fill(255, 255, 255);
   	sierpinski(0,0,800,clock);
-}
-public void mouseDragged()//optional
+  	
+  }
+public void keyPressed()
 {
-
+	if (key == 'r')
+	  	clock=1;
 }
 public void mousePressed()
 {
- 	clock++;
+ 	 	clock++;
+ 	 	System.out.println("clock: "+clock);
 }
 public void sierpinski(int x, int y, int len, int count) 
 {

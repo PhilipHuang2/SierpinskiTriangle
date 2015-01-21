@@ -24,7 +24,8 @@ public void draw()
 {
 	background(0,0,0);
 	fill(134,238,56);
-  	text("press r to restart",500, 400);
+	textSize(23);
+  	text("press r to restart",310, 330);
   	fill(255, 255, 255);
   	sierpinski(0,0,800,clock);
   	

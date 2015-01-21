@@ -8,7 +8,8 @@ public void draw()
 {
 	background(0,0,0);
 	fill(134,238,56);
-  	text("press r to restart",500, 400);
+	textSize(23);
+  	text("press r to restart",310, 330);
   	fill(255, 255, 255);
   	sierpinski(0,0,800,clock);
   	
@@ -21,7 +22,6 @@ public void keyPressed()
 public void mousePressed()
 {
  	 	clock++;
- 	 	System.out.println("clock: "+clock);
 }
 public void sierpinski(int x, int y, int len, int count) 
 {
